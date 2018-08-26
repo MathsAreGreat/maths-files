@@ -27,5 +27,4 @@ let pgcd = (a, b) => {
   if (a < b) return pgcd(b, a);
   if (a % b != 0) return pgcd(b, a % b);
   else return b;
-
 }
