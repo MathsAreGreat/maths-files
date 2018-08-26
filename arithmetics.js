@@ -26,6 +26,14 @@ let premiers = (a, b) => {
 }
 let pgcd = (a, b) => {
   if (a < b) return pgcd(b, a);
-  if (a % b != 0) return pgcd(b, a % b);
+  if (a % b) return pgcd(b, a % b);
   else return b;
+}
+let factoriel = (a) => {
+  if (a) return a * factoriel(a - 1);
+  return 1;
+}
+let fib = (a) => {
+  if (a > 2) return fib(a - 1) + fib(a - 2);
+  return 1;
 }
