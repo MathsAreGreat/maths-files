@@ -1,6 +1,7 @@
 let ppcm = (a, b) => a * b / pgcd(a, b);
 let paire = (a) => !a % 2;
 let randomValue = (min, max) => {
+  if (max === undefined) return randomValue(0, min);
   if (min > max) return randomValue(max, min);
   return (max - min) * Math.random() + min;
 }
